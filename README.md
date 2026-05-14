@@ -1,2 +1,3 @@
 # Planner-de-Eventos-Sociais
-Aplicação desenvolvida para auxiliar no planejamento e organização de eventos sociais, como aniversários e casamentos, permitindo o controle de convidados, orçamento, cronograma e fornecedores de forma prática e intuitiva.
+O Planner de Eventos Sociais é um sistema desenvolvido para auxiliar na organização de eventos como aniversários e casamentos. A aplicação tem como foco principal a gestão de convidados, controle de confirmações (RSVP) e acompanhamento de fornecedores e tarefas.
+Com uma interface simples e funcional, o sistema permite ao organizador ter controle total do evento e proporciona uma melhor experiência aos convidados.
