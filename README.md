@@ -3,9 +3,43 @@
 O Planner de Eventos Sociais é um sistema desenvolvido para auxiliar na organização de eventos como aniversários e casamentos. A aplicação tem como foco principal a gestão de convidados, controle de confirmações (RSVP) e acompanhamento de fornecedores e tarefas.
 Com uma interface simples e funcional, o sistema permite ao organizador ter controle total do evento e proporciona uma melhor experiência aos convidados.
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+graph TD
+
+    subgraph "Cliente"
+        A1[Organizador]
+        A2[Convidado]
+        A[Frontend Web/App]
+    end
+
+    subgraph "Servidor"
+        B[Backend API]
+
+        subgraph "Módulos"
+            D[Serviço RSVP]
+            E[Gestão de Tarefas e Fornecedores]
+            F[Mural de Fotos e Mensagens]
+        end
+    end
+
+    subgraph "Dados"
+        C[Banco de Dados]
+    end
+
+    A1 --> A
+    A2 --> A
+
+    A --> B
+
+    B --> D
+    B --> E
+    B --> F
+
+    D --> C
+    E --> C
+    F --> C
+
+    B --> C
+
 
 
 ## Badges
