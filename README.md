@@ -5,41 +5,22 @@ Com uma interface simples e funcional, o sistema permite ao organizador ter cont
 
 graph TD
 
-    subgraph "Cliente"
-        A1[Organizador]
-        A2[Convidado]
-        A[Frontend Web/App]
-    end
+    A["Frontend (Web/App)"]
+    B[Backend API]
+    C[Banco de Dados]
 
-    subgraph "Servidor"
-        B[Backend API]
-
-        subgraph "Módulos"
-            D[Serviço RSVP]
-            E[Gestão de Tarefas e Fornecedores]
-            F[Mural de Fotos e Mensagens]
-        end
-    end
-
-    subgraph "Dados"
-        C[Banco de Dados]
-    end
-
-    A1 --> A
-    A2 --> A
+    D[Serviço RSVP]
+    E[Módulo de Tarefas e Fornecedores]
+    F["Mural (Fotos e Mensagens)"]
 
     A --> B
+    B --> C
 
     B --> D
     B --> E
     B --> F
 
     D --> C
-    E --> C
-    F --> C
-
-    B --> C
-
 
 
 ## Badges
